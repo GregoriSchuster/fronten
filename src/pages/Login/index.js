@@ -26,24 +26,24 @@ export default function Login() {
 
             history.push('/person');
         }catch(error){
-            alert('Erro ao logar ' + error)
+            alert('Erro ao logar.')
         }      
     }
 
     return (
         <div className="login-container">
+          <label className="login">Login</label>
           <section className="form">
             <form onSubmit={login}>
-                <h1>Cadastro de Pessoas</h1>
                 <input placeholder="Email" 
-                     value={email}
-                     onChange={e => setEmail(e.target.value)}
+                       value={email}
+                       onChange={e => setEmail(e.target.value)}
                 />
                 <input type="password" placeholder="Password"
-                   value={password}
-                   onChange={e => setPassword(e.target.value)}
+                       value={password}
+                       onChange={e => setPassword(e.target.value)}
                 />
-                <button class="button" type="submit">Login</button>
+                <button className="button" type="submit">Entrar</button>
             </form>
             </section>
         </div>

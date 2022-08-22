@@ -1,0 +1,10 @@
+div {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 25px;
+    margin: 20px auto;
+}
+
+form {
+    margin: 10px 0px;
+}
